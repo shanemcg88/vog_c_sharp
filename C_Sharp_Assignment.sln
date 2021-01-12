@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C_Sharp_Assignment", "C_Sharp_Assignment\C_Sharp_Assignment.csproj", "{F668341A-01D4-44E3-86B4-CE7E5811C823}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csharp_oop_dotnetcore", "..\..\..\..\..\FullStack\evolveu\projects\c#\csharp_oop_dotnetcore\csharp_oop_dotnetcore.csproj", "{70CA9081-03B4-43CE-AA59-F478F3B0ADD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F668341A-01D4-44E3-86B4-CE7E5811C823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F668341A-01D4-44E3-86B4-CE7E5811C823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F668341A-01D4-44E3-86B4-CE7E5811C823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F668341A-01D4-44E3-86B4-CE7E5811C823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70CA9081-03B4-43CE-AA59-F478F3B0ADD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70CA9081-03B4-43CE-AA59-F478F3B0ADD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70CA9081-03B4-43CE-AA59-F478F3B0ADD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70CA9081-03B4-43CE-AA59-F478F3B0ADD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94686701-9085-4097-AE56-8D9A809C7565}
+	EndGlobalSection
+EndGlobal
