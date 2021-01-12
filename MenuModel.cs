@@ -10,7 +10,7 @@ namespace C_Sharp_Assignment
         public abstract int MaxMenu { get; }
         public abstract int MinMenu { get; }
         public abstract string MenuOptions { get; }
-        public bool IsNested { get; }
+        public abstract bool IsNested { get; }
 
         public int menuSectionChoice;
 
@@ -28,7 +28,7 @@ namespace C_Sharp_Assignment
             Console.WriteLine("-------------------------");
             Console.WriteLine(MenuOptions);
             Console.WriteLine("-------------------------");
-            Console.WriteLine("B. Back");
+            Console.WriteLine(IsNested ? "B. Back" : null);
             Console.WriteLine("0. Exit Program");
             Console.WriteLine("-------------------------");
 
@@ -38,15 +38,22 @@ namespace C_Sharp_Assignment
         private int MenuValidation()
         {
             int menuNumber;
-            bool isNumber = Int32.TryParse(Console.ReadLine(), out menuNumber);
+            var userInput = Console.ReadLine();
+            bool isNumber = Int32.TryParse(userInput, out menuNumber);
 
-            if (isNumber == false || menuNumber > MaxMenu || menuNumber < MinMenu)
+            if (isNumber == false && userInput.ToUpper() != "B" || menuNumber > MaxMenu || menuNumber < MinMenu)
             {
                 Console.Clear();
+                Console.WriteLine("IF RAN " + userInput);
                 Console.WriteLine("-------------------------");
                 Console.WriteLine("Please enter a valid number from the menu");
                 Console.WriteLine("-------------------------");
                 MenuSelection();
+            }
+            else if (userInput.ToUpper() == "B")
+            {
+                menuNumber = 100;
+                return menuSectionChoice = menuNumber;
             }
             else
             {
