@@ -28,6 +28,7 @@ namespace C_Sharp_Assignment
             Console.WriteLine("-------------------------");
             Console.WriteLine(MenuOptions);
             Console.WriteLine("-------------------------");
+            Console.WriteLine("B. Back");
             Console.WriteLine("0. Exit Program");
             Console.WriteLine("-------------------------");
 
