@@ -34,6 +34,9 @@ namespace C_Sharp_Assignment.Sections
                 case 1:
                     DisplayResultOfTwoNumbers();
                     break;
+                case 2:
+                    DisplayFullName();
+                    break;
                 default:
                     MenuSelection();
                     break;
@@ -66,7 +69,6 @@ namespace C_Sharp_Assignment.Sections
         {
             int num1;
             int num2;
-            Console.Clear();
             Console.Write("Enter the first number: ");
             num1 = NumberValidation(Console.ReadLine());
             Console.Write("Enter the second number: ");
@@ -80,6 +82,18 @@ namespace C_Sharp_Assignment.Sections
             Console.WriteLine(string.Format("{0} * {1} = {2}", convertedNum1, convertedNum2, convertedNum1 * convertedNum2));
             Console.WriteLine(string.Format("{0} / {1} = {2}", convertedNum1, convertedNum2, convertedNum1 / convertedNum2));
             Console.WriteLine(string.Format("{0} % {1} = {2}", convertedNum1, convertedNum2, convertedNum1 % convertedNum2));
+
+            SubOptions();
+        }
+
+        public void DisplayFullName()
+        {
+            Console.Write("Please enter the first name: ");
+            string firstName = Console.ReadLine();
+            Console.Write("Please enter the last name: ");
+            string lastName = Console.ReadLine();
+
+            Console.WriteLine(string.Format("The full name is: {0} {1}", firstName, lastName));
 
             SubOptions();
         }
