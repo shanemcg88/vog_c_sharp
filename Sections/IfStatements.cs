@@ -43,7 +43,9 @@ namespace C_Sharp_Assignment.Sections
                 case 2:
                     NumberComparison();
                     break;
-
+                case 3:
+                    LeapYear();
+                    break;
             }
         }
 
@@ -100,6 +102,23 @@ namespace C_Sharp_Assignment.Sections
             else
             {
                 Console.WriteLine(string.Format("{0} = {1}", firstNumber, secondNumber));
+            }
+
+            SubOptions();
+        }
+
+        private void LeapYear()
+        {
+            Console.WriteLine("Please enter the year: ");
+            int userInput = NumberValidation(Console.ReadLine());
+
+            if ((userInput % 400 == 0) || ((userInput % 4 == 0) && (userInput % 100 != 0)))
+            {
+                    Console.WriteLine(userInput + " IS a leap year");
+            }
+            else
+            {
+                Console.WriteLine(userInput + " is NOT a leap year");
             }
 
             SubOptions();
