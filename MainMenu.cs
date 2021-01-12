@@ -30,6 +30,9 @@ namespace C_Sharp_Assignment.MainMenu
                     Operators operators = new Operators();
                     operators.MenuSelection();
                     break;
+                default:
+                    MenuSelection();
+                    break;
             }
         }       
     }

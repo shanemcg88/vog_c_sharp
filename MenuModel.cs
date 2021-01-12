@@ -35,16 +35,15 @@ namespace C_Sharp_Assignment
             Console.Write("Select option #: ");
         }
 
-        private int MenuValidation()
+        private void MenuValidation()
         {
             int menuNumber;
-            var userInput = Console.ReadLine();
+            string userInput = Console.ReadLine();
             bool isNumber = Int32.TryParse(userInput, out menuNumber);
 
             if (isNumber == false && userInput.ToUpper() != "B" || menuNumber > MaxMenu || menuNumber < MinMenu)
             {
                 Console.Clear();
-                Console.WriteLine("IF RAN " + userInput);
                 Console.WriteLine("-------------------------");
                 Console.WriteLine("Please enter a valid number from the menu");
                 Console.WriteLine("-------------------------");
@@ -53,13 +52,13 @@ namespace C_Sharp_Assignment
             else if (userInput.ToUpper() == "B")
             {
                 menuNumber = 100;
-                return menuSectionChoice = menuNumber;
+                MenuSections(menuNumber);
             }
             else
             {
-                return menuSectionChoice = menuNumber;
+                MenuSections(menuNumber);
             }
-            return menuNumber;
+            
         }
 
         public virtual void MenuSections(int menuNumber)

@@ -34,6 +34,31 @@ namespace C_Sharp_Assignment.Sections
                 case 1:
                     DisplayResultOfTwoNumbers();
                     break;
+                default:
+                    MenuSelection();
+                    break;
+            }
+        }
+
+        public void SubOptions()
+        {
+            Console.WriteLine("B. Back");
+            Console.WriteLine("0. Exit Program");
+            string userInput = Console.ReadLine();
+
+            switch (userInput.ToUpper())
+            {
+                case "B":
+                    Console.Clear();
+                    MenuSelection();
+                    break;
+                case "0":
+                    Environment.Exit(0);
+                    break;
+                default:
+                    Console.WriteLine("Please enter valid selection");
+                    SubOptions();
+                    break;
             }
         }
 
@@ -41,18 +66,37 @@ namespace C_Sharp_Assignment.Sections
         {
             int num1;
             int num2;
-            bool isNumber;
             Console.Clear();
             Console.Write("Enter the first number: ");
-            var userInput1 = Console.ReadLine();
-            isNumber = Int32.TryParse(userInput1, out num1);
+            num1 = NumberValidation(Console.ReadLine());
             Console.Write("Enter the second number: ");
-            var userInput2 = Console.ReadLine();
-            isNumber = Int32.TryParse(userInput2, out num2);
+            num2 = NumberValidation(Console.ReadLine());
 
-            Console.WriteLine("NUM 1= " + num1 + "NUM2 = " + num2);
+            float convertedNum1 = (float)num1;
+            float convertedNum2 = (float)num2;
 
+            Console.WriteLine(string.Format("{0} + {1} = {2}", convertedNum1, convertedNum2, convertedNum1 + convertedNum2));
+            Console.WriteLine(string.Format("{0} - {1} = {2}", convertedNum1, convertedNum2, convertedNum1 - convertedNum2));
+            Console.WriteLine(string.Format("{0} * {1} = {2}", convertedNum1, convertedNum2, convertedNum1 * convertedNum2));
+            Console.WriteLine(string.Format("{0} / {1} = {2}", convertedNum1, convertedNum2, convertedNum1 / convertedNum2));
+            Console.WriteLine(string.Format("{0} % {1} = {2}", convertedNum1, convertedNum2, convertedNum1 % convertedNum2));
+
+            SubOptions();
         }
 
+        private int NumberValidation(string input)
+        {
+            int num;
+            bool isNumber;
+            isNumber = Int32.TryParse(input, out num);
+            if (!isNumber)
+            {
+                Console.Write("Please enter a number: ");
+                return NumberValidation(Console.ReadLine());
+            } else
+            {
+                return num;
+            }       
+        }
     }
 }
