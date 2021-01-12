@@ -1,0 +1,13 @@
+C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\bin\Debug\netcoreapp3.1\C_Sharp_Assignment.exe
+C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\bin\Debug\netcoreapp3.1\C_Sharp_Assignment.deps.json
+C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\bin\Debug\netcoreapp3.1\C_Sharp_Assignment.runtimeconfig.json
+C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\bin\Debug\netcoreapp3.1\C_Sharp_Assignment.runtimeconfig.dev.json
+C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\bin\Debug\netcoreapp3.1\C_Sharp_Assignment.dll
+C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\bin\Debug\netcoreapp3.1\C_Sharp_Assignment.pdb
+C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.csprojAssemblyReference.cache
+C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.AssemblyInfoInputs.cache
+C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.AssemblyInfo.cs
+C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.csproj.CoreCompileInputs.cache
+C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.dll
+C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.pdb
+C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.genruntimeconfig.cache
