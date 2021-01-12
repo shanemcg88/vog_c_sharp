@@ -37,6 +37,9 @@ namespace C_Sharp_Assignment.Sections
                 case 2:
                     DisplayFullName();
                     break;
+                case 3:
+                    ConvertCelsius();
+                    break;
                 default:
                     MenuSelection();
                     break;
@@ -94,7 +97,16 @@ namespace C_Sharp_Assignment.Sections
             string lastName = Console.ReadLine();
 
             Console.WriteLine(string.Format("The full name is: {0} {1}", firstName, lastName));
+            SubOptions();
+        }
 
+        public void ConvertCelsius()
+        {
+            Console.Write("Input Celsius: ");
+            int userInput = NumberValidation(Console.ReadLine());
+            int celsiusToFahrenheit = (userInput * 9 / 5) + 32;
+
+            Console.WriteLine(string.Format("{0}C is {1}F", userInput, celsiusToFahrenheit));
             SubOptions();
         }
 
