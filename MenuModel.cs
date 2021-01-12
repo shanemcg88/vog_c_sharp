@@ -63,7 +63,44 @@ namespace C_Sharp_Assignment
 
         public virtual void MenuSections(int menuNumber)
         {
+        }
 
+        public void SubOptions()
+        {
+            Console.WriteLine("B. Back");
+            Console.WriteLine("0. Exit Program");
+            string userInput = Console.ReadLine();
+
+            switch (userInput.ToUpper())
+            {
+                case "B":
+                    Console.Clear();
+                    MenuSelection();
+                    break;
+                case "0":
+                    Environment.Exit(0);
+                    break;
+                default:
+                    Console.WriteLine("Please enter valid selection");
+                    SubOptions();
+                    break;
+            }
+        }
+
+        public int NumberValidation(string input)
+        {
+            int num;
+            bool isNumber;
+            isNumber = Int32.TryParse(input, out num);
+            if (!isNumber)
+            {
+                Console.Write("Please enter a number: ");
+                return NumberValidation(Console.ReadLine());
+            }
+            else
+            {
+                return num;
+            }
         }
     }
 }

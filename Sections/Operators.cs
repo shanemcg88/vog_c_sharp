@@ -46,29 +46,7 @@ namespace C_Sharp_Assignment.Sections
             }
         }
 
-        public void SubOptions()
-        {
-            Console.WriteLine("B. Back");
-            Console.WriteLine("0. Exit Program");
-            string userInput = Console.ReadLine();
-
-            switch (userInput.ToUpper())
-            {
-                case "B":
-                    Console.Clear();
-                    MenuSelection();
-                    break;
-                case "0":
-                    Environment.Exit(0);
-                    break;
-                default:
-                    Console.WriteLine("Please enter valid selection");
-                    SubOptions();
-                    break;
-            }
-        }
-
-        public void DisplayResultOfTwoNumbers()
+        private void DisplayResultOfTwoNumbers()
         {
             int num1;
             int num2;
@@ -89,7 +67,7 @@ namespace C_Sharp_Assignment.Sections
             SubOptions();
         }
 
-        public void DisplayFullName()
+        private void DisplayFullName()
         {
             Console.Write("Please enter the first name: ");
             string firstName = Console.ReadLine();
@@ -100,7 +78,7 @@ namespace C_Sharp_Assignment.Sections
             SubOptions();
         }
 
-        public void ConvertCelsius()
+        private void ConvertCelsius()
         {
             Console.Write("Input Celsius: ");
             int userInput = NumberValidation(Console.ReadLine());
@@ -108,21 +86,6 @@ namespace C_Sharp_Assignment.Sections
 
             Console.WriteLine(string.Format("{0}C is {1}F", userInput, celsiusToFahrenheit));
             SubOptions();
-        }
-
-        private int NumberValidation(string input)
-        {
-            int num;
-            bool isNumber;
-            isNumber = Int32.TryParse(input, out num);
-            if (!isNumber)
-            {
-                Console.Write("Please enter a number: ");
-                return NumberValidation(Console.ReadLine());
-            } else
-            {
-                return num;
-            }       
         }
     }
 }

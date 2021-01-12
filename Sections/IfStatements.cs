@@ -37,8 +37,72 @@ namespace C_Sharp_Assignment.Sections
                     Menu mainMenu = new Menu();
                     mainMenu.MenuSelection();
                     break;
+                case 1:
+                    AgeStages();
+                    break;
+                case 2:
+                    NumberComparison();
+                    break;
 
             }
+        }
+
+        private void AgeStages()
+        {
+            string ageCategory = string.Empty;
+            Console.Write("Please input your age: ");
+            int userAge = NumberValidation(Console.ReadLine());
+
+            if (userAge <= 1)
+            {
+                ageCategory = "Baby";
+            }
+            else if (userAge >= 2 && userAge <= 3)
+            {
+                ageCategory = "Toddler";
+            }
+            else if (userAge >= 4 && userAge <= 12)
+            {
+                ageCategory = "Kid";
+            }
+            else if (userAge >= 13 && userAge <= 18)
+            {
+                ageCategory = "Teenager";
+            }
+            else if (userAge >= 19 && userAge <= 60)
+            {
+                ageCategory = "Adult";
+            }
+            else if (userAge > 60)
+            {
+                ageCategory = "Senior";
+            }
+
+            Console.WriteLine(string.Format("Your age is {0}. You are {1}", userAge, ageCategory));
+            SubOptions();
+        }
+
+        private void NumberComparison()
+        {
+            Console.Write("Enter the first number: ");
+            int firstNumber = NumberValidation(Console.ReadLine());
+            Console.Write("Enter your second number: ");
+            int secondNumber = NumberValidation(Console.ReadLine());
+
+            if (firstNumber > secondNumber)
+            {
+                Console.WriteLine(string.Format("{0} > {1}", firstNumber, secondNumber));
+            } 
+            else if (firstNumber < secondNumber)
+            {
+                Console.WriteLine(string.Format("{0} < {1}", firstNumber, secondNumber));
+            }
+            else
+            {
+                Console.WriteLine(string.Format("{0} = {1}", firstNumber, secondNumber));
+            }
+
+            SubOptions();
         }
 
     }
