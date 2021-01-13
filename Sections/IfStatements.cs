@@ -191,7 +191,70 @@ namespace C_Sharp_Assignment.Sections
 
         private void LowestToHighest()
         {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("6. Input 3 numbers. Display the list of numbers from lowest to highest");
+            int highest=0;
+            int middle=0;
+            int lowest=0;
+            Console.Write("Enter the first number: ");
+            int firstNumber = NumberValidation(Console.ReadLine());
+            Console.Write("Enter the second number: ");
+            int secondNumber = NumberValidation(Console.ReadLine());
+            Console.Write("Enter the third number: ");
+            int thirdNumber = NumberValidation(Console.ReadLine());
 
+            if (firstNumber > secondNumber && firstNumber > thirdNumber)
+            {
+                highest = firstNumber;
+                if (secondNumber > thirdNumber)
+                {
+                    middle = secondNumber;
+                    lowest = thirdNumber;
+                }
+                else
+                {
+                    middle = thirdNumber;
+                    lowest = secondNumber;
+                }   
+            }
+            else if (secondNumber > firstNumber && secondNumber > thirdNumber)
+            {
+                    highest = secondNumber;
+
+                if (firstNumber > thirdNumber)
+                {
+                    middle = firstNumber;
+                    lowest = thirdNumber;
+                }
+                else
+                {
+                    middle = thirdNumber;
+                    lowest = firstNumber;
+                }
+
+            }
+            else if (thirdNumber > firstNumber && thirdNumber > secondNumber)
+            {
+                Console.WriteLine("3-1");
+                highest = thirdNumber;
+
+                if (secondNumber > firstNumber)
+                {
+                    Console.WriteLine("3-2");
+                    middle = secondNumber;
+                    lowest = firstNumber;
+                }
+                else
+                {
+                    Console.WriteLine("3-3");
+                    middle = firstNumber;
+                    lowest = secondNumber;
+                }
+            }
+
+            Console.WriteLine(string.Format("{0} {1} {2}", lowest, middle, highest));
+
+            SubOptions();
         }
 
     }
