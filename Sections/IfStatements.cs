@@ -55,6 +55,9 @@ namespace C_Sharp_Assignment.Sections
                 case 6:
                     LowestToHighest();
                     break;
+                case 7:
+                    FindX();
+                    break;
             }
         }
 
@@ -257,5 +260,12 @@ namespace C_Sharp_Assignment.Sections
             SubOptions();
         }
 
+        private void FindX()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("7. Find x in function ax2 + bx + c = 0");
+
+            
+        }
     }
 }
