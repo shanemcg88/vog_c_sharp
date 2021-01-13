@@ -35,6 +35,11 @@ namespace C_Sharp_Assignment.MainMenu
                     IfStatements ifStatements = new IfStatements();
                     ifStatements.MenuSelection();
                     break;
+                case 3:
+                    Console.Clear();
+                    SwitchCase switchCase = new SwitchCase();
+                    switchCase.MenuSelection();
+                    break;
                 default:
                     MenuSelection();
                     break;

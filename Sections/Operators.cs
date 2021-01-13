@@ -12,6 +12,7 @@ namespace C_Sharp_Assignment.Sections
             "\n2. Input first name and last name. Display the full name" +
             "\n3. Convert Celsius to Fahrenheit";
         private bool _isNested = true;
+        private int _menuNumber;
 
         public override string MenuTitle { get { return _menuTitle; } }
         public override int MaxMenu { get { return _maxMenu; } }
@@ -21,6 +22,8 @@ namespace C_Sharp_Assignment.Sections
 
         public override void MenuSections(int menuNumber)
         {
+            _menuNumber = menuNumber;
+
             switch (menuNumber)
             {
                 case 0:
@@ -66,7 +69,7 @@ namespace C_Sharp_Assignment.Sections
             Console.WriteLine(string.Format("{0} / {1} = {2}", convertedNum1, convertedNum2, convertedNum1 / convertedNum2));
             Console.WriteLine(string.Format("{0} % {1} = {2}", convertedNum1, convertedNum2, convertedNum1 % convertedNum2));
 
-            SubOptions();
+            SubOptions(_menuNumber);
         }
 
         private void DisplayFullName()
@@ -80,7 +83,7 @@ namespace C_Sharp_Assignment.Sections
             string lastName = Console.ReadLine();
 
             Console.WriteLine(string.Format("The full name is: {0} {1}", firstName, lastName));
-            SubOptions();
+            SubOptions(_menuNumber);
         }
 
         private void ConvertCelsius()
@@ -92,7 +95,7 @@ namespace C_Sharp_Assignment.Sections
             int celsiusToFahrenheit = (userInput * 9 / 5) + 32;
 
             Console.WriteLine(string.Format("{0}C is {1}F", userInput, celsiusToFahrenheit));
-            SubOptions();
+            SubOptions(_menuNumber);
         }
     }
 }

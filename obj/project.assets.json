@@ -9,19 +9,21 @@
   },
   "packageFolders": {
     "C:\\Users\\Shane\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Shane\\Desktop\\LaunchPadByVog\\C#_Assignment\\cSharpAssignments_Shane\\0_C_Sharp_Assignment\\C_Sharp_Assignment\\C_Sharp_Assignment\\C_Sharp_Assignment.csproj",
+      "projectUniqueName": "F:\\webdev\\launchpad_by_vog\\c_sharp_assignment\\vog_c_sharp\\C_Sharp_Assignment.csproj",
       "projectName": "C_Sharp_Assignment",
-      "projectPath": "C:\\Users\\Shane\\Desktop\\LaunchPadByVog\\C#_Assignment\\cSharpAssignments_Shane\\0_C_Sharp_Assignment\\C_Sharp_Assignment\\C_Sharp_Assignment\\C_Sharp_Assignment.csproj",
+      "projectPath": "F:\\webdev\\launchpad_by_vog\\c_sharp_assignment\\vog_c_sharp\\C_Sharp_Assignment.csproj",
       "packagesPath": "C:\\Users\\Shane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Shane\\Desktop\\LaunchPadByVog\\C#_Assignment\\cSharpAssignments_Shane\\0_C_Sharp_Assignment\\C_Sharp_Assignment\\C_Sharp_Assignment\\obj\\",
+      "outputPath": "F:\\webdev\\launchpad_by_vog\\c_sharp_assignment\\vog_c_sharp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\Shane\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,7 +39,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -49,7 +50,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

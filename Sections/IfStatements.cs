@@ -18,6 +18,7 @@ namespace C_Sharp_Assignment.Sections
             "\n6. Input 3 numbers. Display the list of numbers from lowest to highest" +
             "\n7. Find x in function ax2 + bx + c = 0";
         private bool _isNested = true;
+        private int _menuNumber;
 
         public override string MenuTitle { get { return _menuTitle; } }
         public override int MaxMenu { get { return _maxMenu; } }
@@ -27,6 +28,8 @@ namespace C_Sharp_Assignment.Sections
 
         public override void MenuSections(int menuNumber)
         {
+            _menuNumber = menuNumber;
+
             switch (menuNumber)
             {
                 case 0:
@@ -95,7 +98,7 @@ namespace C_Sharp_Assignment.Sections
             }
 
             Console.WriteLine(string.Format("Your age is {0}. You are {1}", userAge, ageCategory));
-            SubOptions();
+            SubOptions(_menuNumber);
         }
 
         private void NumberComparison()
@@ -120,7 +123,7 @@ namespace C_Sharp_Assignment.Sections
                 Console.WriteLine(string.Format("{0} = {1}", firstNumber, secondNumber));
             }
 
-            SubOptions();
+            SubOptions(_menuNumber);
         }
 
         private void LeapYear()
@@ -139,7 +142,7 @@ namespace C_Sharp_Assignment.Sections
                 Console.WriteLine(userInput + " is NOT a leap year");
             }
 
-            SubOptions();
+            SubOptions(_menuNumber);
         }
 
         private void Divisor()
@@ -165,7 +168,7 @@ namespace C_Sharp_Assignment.Sections
                 Console.WriteLine(firstNumber + " is NOT a divisor of " + secondNumber);
             }
 
-            SubOptions();
+            SubOptions(_menuNumber);
         }
 
         private void MaxAndMinNumbers()
@@ -189,7 +192,7 @@ namespace C_Sharp_Assignment.Sections
                 Console.WriteLine("The minimum number is " + firstNumber);
             }
 
-            SubOptions();
+            SubOptions(_menuNumber);
         }
 
         private void LowestToHighest()
@@ -257,7 +260,7 @@ namespace C_Sharp_Assignment.Sections
 
             Console.WriteLine(string.Format("{0} {1} {2}", lowest, middle, highest));
 
-            SubOptions();
+            SubOptions(_menuNumber);
         }
 
         private void FindX()

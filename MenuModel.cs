@@ -65,14 +65,20 @@ namespace C_Sharp_Assignment
         {
         }
 
-        public void SubOptions()
+        public void SubOptions(int menuSelection = 0)
         {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("R. Reset");
             Console.WriteLine("B. Back");
             Console.WriteLine("0. Exit Program");
-            string userInput = Console.ReadLine();
+            Console.WriteLine("-------------------------");
 
+            string userInput = Console.ReadLine();
             switch (userInput.ToUpper())
             {
+                case "R":
+                    MenuSections(menuSelection);
+                    break;
                 case "B":
                     Console.Clear();
                     MenuSelection();

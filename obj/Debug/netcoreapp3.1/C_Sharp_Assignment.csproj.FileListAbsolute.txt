@@ -11,3 +11,16 @@ C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_
 C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.dll
 C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.pdb
 C:\Users\Shane\Desktop\LaunchPadByVog\C#_Assignment\cSharpAssignments_Shane\0_C_Sharp_Assignment\C_Sharp_Assignment\C_Sharp_Assignment\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.genruntimeconfig.cache
+F:\webdev\launchpad_by_vog\c_sharp_assignment\vog_c_sharp\bin\Debug\netcoreapp3.1\C_Sharp_Assignment.exe
+F:\webdev\launchpad_by_vog\c_sharp_assignment\vog_c_sharp\bin\Debug\netcoreapp3.1\C_Sharp_Assignment.deps.json
+F:\webdev\launchpad_by_vog\c_sharp_assignment\vog_c_sharp\bin\Debug\netcoreapp3.1\C_Sharp_Assignment.runtimeconfig.json
+F:\webdev\launchpad_by_vog\c_sharp_assignment\vog_c_sharp\bin\Debug\netcoreapp3.1\C_Sharp_Assignment.runtimeconfig.dev.json
+F:\webdev\launchpad_by_vog\c_sharp_assignment\vog_c_sharp\bin\Debug\netcoreapp3.1\C_Sharp_Assignment.dll
+F:\webdev\launchpad_by_vog\c_sharp_assignment\vog_c_sharp\bin\Debug\netcoreapp3.1\C_Sharp_Assignment.pdb
+F:\webdev\launchpad_by_vog\c_sharp_assignment\vog_c_sharp\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.csprojAssemblyReference.cache
+F:\webdev\launchpad_by_vog\c_sharp_assignment\vog_c_sharp\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.csproj.CoreCompileInputs.cache
+F:\webdev\launchpad_by_vog\c_sharp_assignment\vog_c_sharp\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.AssemblyInfoInputs.cache
+F:\webdev\launchpad_by_vog\c_sharp_assignment\vog_c_sharp\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.AssemblyInfo.cs
+F:\webdev\launchpad_by_vog\c_sharp_assignment\vog_c_sharp\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.dll
+F:\webdev\launchpad_by_vog\c_sharp_assignment\vog_c_sharp\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.pdb
+F:\webdev\launchpad_by_vog\c_sharp_assignment\vog_c_sharp\obj\Debug\netcoreapp3.1\C_Sharp_Assignment.genruntimeconfig.cache
