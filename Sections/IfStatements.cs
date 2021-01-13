@@ -46,11 +46,22 @@ namespace C_Sharp_Assignment.Sections
                 case 3:
                     LeapYear();
                     break;
+                case 4:
+                    Divisor();
+                    break;
+                case 5:
+                    MaxAndMinNumbers();
+                    break;
+                case 6:
+                    LowestToHighest();
+                    break;
             }
         }
 
         private void AgeStages()
         {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("1. Input your age. Display your age and stages");
             string ageCategory = string.Empty;
             Console.Write("Please input your age: ");
             int userAge = NumberValidation(Console.ReadLine());
@@ -86,6 +97,8 @@ namespace C_Sharp_Assignment.Sections
 
         private void NumberComparison()
         {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("2. Input 2 numbers. Show the comparison of the 2 numbers");
             Console.Write("Enter the first number: ");
             int firstNumber = NumberValidation(Console.ReadLine());
             Console.Write("Enter your second number: ");
@@ -109,12 +122,14 @@ namespace C_Sharp_Assignment.Sections
 
         private void LeapYear()
         {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("3. Input the year and print whether that year is a leap year or not");
             Console.WriteLine("Please enter the year: ");
             int userInput = NumberValidation(Console.ReadLine());
 
             if ((userInput % 400 == 0) || ((userInput % 4 == 0) && (userInput % 100 != 0)))
             {
-                    Console.WriteLine(userInput + " IS a leap year");
+                Console.WriteLine(userInput + " IS a leap year");
             }
             else
             {
@@ -122,6 +137,61 @@ namespace C_Sharp_Assignment.Sections
             }
 
             SubOptions();
+        }
+
+        private void Divisor()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("4. Check n is divisor of m or not");
+
+            Console.Write("Enter the first number: ");
+            int firstNumber = NumberValidation(Console.ReadLine());
+            Console.Write("Enter the second number: ");
+            int secondNumber = NumberValidation(Console.ReadLine());
+            if (firstNumber == 0 || secondNumber == 0)
+            {
+                Console.WriteLine("Please input a number greater than 0");
+                Divisor();
+            }
+            if (firstNumber % secondNumber == 0)
+            {
+                Console.WriteLine(firstNumber + " is a divisor of " + secondNumber);
+            }
+            else
+            {
+                Console.WriteLine(firstNumber + " is NOT a divisor of " + secondNumber);
+            }
+
+            SubOptions();
+        }
+
+        private void MaxAndMinNumbers()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("5. Input 2 numbers. Show the maximum and minimum number");
+
+            Console.Write("Enter the first number: ");
+            int firstNumber = NumberValidation(Console.ReadLine());
+            Console.Write("Enter the second number: ");
+            int secondNumber = NumberValidation(Console.ReadLine());
+
+            if (firstNumber > secondNumber)
+            {
+                Console.WriteLine("The maximum number is " + firstNumber);
+                Console.WriteLine("The minimum number is " + secondNumber);
+            }
+            else
+            {
+                Console.WriteLine("The maximum number is " + secondNumber);
+                Console.WriteLine("The minimum number is " + firstNumber);
+            }
+
+            SubOptions();
+        }
+
+        private void LowestToHighest()
+        {
+
         }
 
     }

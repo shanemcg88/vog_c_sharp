@@ -48,6 +48,8 @@ namespace C_Sharp_Assignment.Sections
 
         private void DisplayResultOfTwoNumbers()
         {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("1. Input 2 numbers. Display the result of the operator");
             int num1;
             int num2;
             Console.Write("Enter the first number: ");
@@ -69,6 +71,9 @@ namespace C_Sharp_Assignment.Sections
 
         private void DisplayFullName()
         {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("2. Input first name and last name. Display the full name");
+
             Console.Write("Please enter the first name: ");
             string firstName = Console.ReadLine();
             Console.Write("Please enter the last name: ");
@@ -80,6 +85,8 @@ namespace C_Sharp_Assignment.Sections
 
         private void ConvertCelsius()
         {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("Convert Celsius to Fahrenheit");
             Console.Write("Input Celsius: ");
             int userInput = NumberValidation(Console.ReadLine());
             int celsiusToFahrenheit = (userInput * 9 / 5) + 32;
