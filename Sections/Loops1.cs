@@ -19,7 +19,8 @@ namespace C_Sharp_Assignment.Sections
             "\n5. Input n, n is natural number, display the sum of odd numbers from 1 to n" +
             "\n6. **" +
             "\n7. Input n, n is natural number, display all n of divisors from 1 to n" +
-            "\n8. Input n, display the squart asterisk with n column and row.";
+            "\n8. Input n, display the squart asterisk with n column and row." +
+            "\n9. Input n, display the border square asterisk with n column and row.";
         private bool _isNested = true;
         private int _menuNumber;
 
@@ -67,6 +68,9 @@ namespace C_Sharp_Assignment.Sections
                     break;
                 case 8:
                     SquareAsterisk();
+                    break;
+                case 9:
+                    BorderSquareAsterisk();
                     break;
             }
         }
@@ -240,6 +244,33 @@ namespace C_Sharp_Assignment.Sections
             }
 
             SubOptions(_menuNumber);   
+        }
+
+        private void BorderSquareAsterisk()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("9. Input n, display the border square asterisk with n column and row.");
+            Console.Write("Enter a number for n: ");
+            int userInput = NumberValidation(Console.ReadLine());
+
+            for (int i = 1; i <= userInput; i++)
+            {
+                for (int x = 1; x <= userInput; x++)
+                {
+                    if (i == 1 || i == userInput || x == 1 || x == userInput)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+                Console.WriteLine();
+            }
+
+            SubOptions(_menuNumber);
+
         }
 
 
