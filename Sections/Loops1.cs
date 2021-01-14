@@ -15,7 +15,11 @@ namespace C_Sharp_Assignment.Sections
         private string _menuOptions = "1. Input n, n is natural number, display the list of number from 0 to n" +
             "\n2. Input n, display the multiplication table of n" +
             "\n3. Input n, n is natural number, calculate the sum of number from 1 to n" +
-            "\n4. Input n, n is natural number, calculate the average all numbers from 1 to n";
+            "\n4. Input n, n is natural number, calculate the average all numbers from 1 to n" +
+            "\n5. Input n, n is natural number, display the sum of odd numbers from 1 to n" +
+            "\n6. **" +
+            "\n7. Input n, n is natural number, display all n of divisors from 1 to n" +
+            "\n8. Input n, display the squart asterisk with n column and row.";
         private bool _isNested = true;
         private int _menuNumber;
 
@@ -51,6 +55,16 @@ namespace C_Sharp_Assignment.Sections
                 case 4:
                     AverageOfN();
                     break;
+                case 5:
+                    SumOfOddN();
+                    break;
+                case 6:
+                    Console.WriteLine("coming soon");
+                    SubOptions(_menuNumber);
+                    break;
+                case 7:
+                    DivisorsOfN();
+                    break;
             }
         }
 
@@ -58,7 +72,7 @@ namespace C_Sharp_Assignment.Sections
         {
             Console.WriteLine("-------------------------");
             Console.WriteLine("1. Input n, n is  natural number, display the list of number from 0 to n");
-            Console.WriteLine("Enter a number for n: ");
+            Console.Write("Enter a number for n: ");
             int userNumber = NumberValidation(Console.ReadLine());
 
             Console.WriteLine("You entered: " + userNumber);
@@ -75,7 +89,7 @@ namespace C_Sharp_Assignment.Sections
         {
             Console.WriteLine("-------------------------");
             Console.WriteLine("2. Input n, display the multiplication table of n");
-            Console.WriteLine("Enter a number for n: ");
+            Console.Write("Enter a number for n: ");
             int userNumber = NumberValidation(Console.ReadLine());
 
             Console.WriteLine("You entered: " + userNumber);
@@ -91,7 +105,7 @@ namespace C_Sharp_Assignment.Sections
         {
             Console.WriteLine("-------------------------");
             Console.WriteLine("3. Input n, n is  natural number,  calculate the sum of number from 1 to n");
-            Console.WriteLine("Enter a number for n: ");
+            Console.Write("Enter a number for n: ");
             int userNumber = NumberValidation(Console.ReadLine());
 
             int total = 0;
@@ -120,7 +134,7 @@ namespace C_Sharp_Assignment.Sections
         {
             Console.WriteLine("-------------------------");
             Console.WriteLine("4. Input n, n is natural number, calculate the average all numbers from 1 to n");
-            Console.WriteLine("Enter a number for n: ");
+            Console.Write("Enter a number for n: ");
             int userNumber = NumberValidation(Console.ReadLine());
 
             int collection = 0;
@@ -149,6 +163,64 @@ namespace C_Sharp_Assignment.Sections
 
             SubOptions(_menuNumber);
         }
+
+        private void SumOfOddN()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("5. Input n, n is natural number, display the sum of odd numbers from 1 to n");
+            Console.Write("Enter a number for n: ");
+            int userNumber = NumberValidation(Console.ReadLine());
+
+            int total = 0;
+            for (int i = 0; i <= userNumber; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    continue;
+                }
+                else
+                {
+                    if (i == userNumber-1 || i == userNumber)
+                    {
+                        Console.Write(i);
+                    }
+                    else
+                    {
+                        Console.Write(i + " + ");
+                    }
+                    total += i;
+                }
+            }
+            Console.Write(" = " + total);
+            Console.WriteLine();
+
+            SubOptions(_menuNumber);
+        }
+
+        /////////////////////////////////////////////
+        ///# 6 GOES HERE
+        /////////////////////////////////////////////
+        
+        private void DivisorsOfN()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("7. Input n, n is natural number, display all n of divisors from 1 to n");
+            Console.Write("Enter a number for n: ");
+            int userInput = NumberValidation(Console.ReadLine());
+
+            for(int i = 1; i <= userInput; i++)
+            {
+                if (userInput % i == 0)
+                {
+                    Console.Write(i + " ");
+                }
+            }
+
+            Console.WriteLine();
+            SubOptions(_menuNumber);
+        }
+
+
 
 
     }
