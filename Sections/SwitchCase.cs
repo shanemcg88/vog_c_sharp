@@ -38,11 +38,15 @@ namespace C_Sharp_Assignment.Sections
                 case 1:
                     DayOfTheWeek();
                     break;
+                case 2:
+                    MonthOfYear();
+                    break;
             }
         }
 
         private void DayOfTheWeek()
         {
+            Console.WriteLine("-------------------------");
             Console.WriteLine("1. Input the day number and display name of day");
             Console.Write("Input day number: ");
             int dayNumber = NumberValidation(Console.ReadLine());
@@ -75,6 +79,58 @@ namespace C_Sharp_Assignment.Sections
                     break;
             }
 
+            SubOptions(_menuNumber);
+        }
+
+        private void MonthOfYear()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("2. Input the month number and display month name.");
+            Console.Write("Input the month number: ");
+            int monthNumber = NumberValidation(Console.ReadLine());
+
+            switch (monthNumber)
+            {
+                case 1:
+                    Console.WriteLine("January");
+                    break;
+                case 2:
+                    Console.WriteLine("February");
+                    break;
+                case 3:
+                    Console.WriteLine("March");
+                    break;
+                case 4:
+                    Console.WriteLine("April");
+                    break;
+                case 5:
+                    Console.WriteLine("May");
+                    break;
+                case 6:
+                    Console.WriteLine("June");
+                    break;
+                case 7:
+                    Console.WriteLine("July");
+                    break;
+                case 8:
+                    Console.WriteLine("August");
+                    break;
+                case 9:
+                    Console.WriteLine("September");
+                    break;
+                case 10:
+                    Console.WriteLine("October");
+                    break;
+                case 11:
+                    Console.WriteLine("November");
+                    break;
+                case 12:
+                    Console.WriteLine("December");
+                    break;
+                default:
+                    Console.WriteLine("Out of range");
+                    break;
+            }
             SubOptions(_menuNumber);
         }
 
