@@ -65,6 +65,9 @@ namespace C_Sharp_Assignment.Sections
                 case 7:
                     DivisorsOfN();
                     break;
+                case 8:
+                    SquareAsterisk();
+                    break;
             }
         }
 
@@ -218,6 +221,25 @@ namespace C_Sharp_Assignment.Sections
 
             Console.WriteLine();
             SubOptions(_menuNumber);
+        }
+
+        private void SquareAsterisk()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("8. Input n, display the squart asterisk with n column and row.");
+            Console.Write("Enter a number for n: ");
+            int userInput = NumberValidation(Console.ReadLine());
+
+            for (int i = 1; i <= userInput; i++)
+            {
+                for (int x = 1; x <= userInput; x++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
+            SubOptions(_menuNumber);   
         }
 
 
