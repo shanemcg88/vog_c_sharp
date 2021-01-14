@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace C_Sharp_Assignment.Sections
@@ -11,8 +12,10 @@ namespace C_Sharp_Assignment.Sections
         private string _menuTitle = "Loops pt. 1";
         private int _maxMenu = 15;
         private int _minMenu = 0;
-        private string _menuOptions = "1. Input n, n is  natural number, display the list of number from 0 to n" +
-            "\n2. Input n, display the multiplication table of n";
+        private string _menuOptions = "1. Input n, n is natural number, display the list of number from 0 to n" +
+            "\n2. Input n, display the multiplication table of n" +
+            "\n3. Input n, n is natural number, calculate the sum of number from 1 to n" +
+            "\n4. Input n, n is natural number, calculate the average all numbers from 1 to n";
         private bool _isNested = true;
         private int _menuNumber;
 
@@ -41,6 +44,12 @@ namespace C_Sharp_Assignment.Sections
                     break;
                 case 2:
                     MultiplicationOfN();
+                    break;
+                case 3:
+                    SumOfN();
+                    break;
+                case 4:
+                    AverageOfN();
                     break;
             }
         }
@@ -74,6 +83,69 @@ namespace C_Sharp_Assignment.Sections
             {
                 Console.WriteLine(string.Format("{0} x {1} = {2}", userNumber, x, userNumber * x));
             }
+
+            SubOptions(_menuNumber);
+        }
+
+        private void SumOfN()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("3. Input n, n is  natural number,  calculate the sum of number from 1 to n");
+            Console.WriteLine("Enter a number for n: ");
+            int userNumber = NumberValidation(Console.ReadLine());
+
+            int total = 0;
+            int i = 0;
+            Console.WriteLine("You entered: " + userNumber);
+            
+            while (i != userNumber+1)
+            {
+                if (i == userNumber)
+                {
+                    Console.Write(i);
+                }
+                else
+                {
+                    Console.Write(i + " + ");
+                }
+                total += i;
+                i++;
+            }
+
+            Console.WriteLine(" = " + total);
+            SubOptions(_menuNumber);   
+        }
+
+        private void AverageOfN()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("4. Input n, n is natural number, calculate the average all numbers from 1 to n");
+            Console.WriteLine("Enter a number for n: ");
+            int userNumber = NumberValidation(Console.ReadLine());
+
+            int collection = 0;
+            int i = 0;
+
+            Console.Write("(");
+            while (i != userNumber+1)
+            {
+                if (i == userNumber)
+                {
+                    Console.Write(i);
+                }
+                else
+                {
+                    Console.Write(i + " + ");
+                }
+                collection += i;
+                i++;
+            }
+            Console.Write(")");
+
+            float total = (float)collection / (float)userNumber;
+
+            Console.Write(" / " + userNumber + " = " + total);
+            Console.WriteLine("");
 
             SubOptions(_menuNumber);
         }
