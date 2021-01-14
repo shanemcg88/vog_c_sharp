@@ -20,7 +20,8 @@ namespace C_Sharp_Assignment.Sections
             "\n6. **" +
             "\n7. Input n, n is natural number, display all n of divisors from 1 to n" +
             "\n8. Input n, display the squart asterisk with n column and row." +
-            "\n9. Input n, display the border square asterisk with n column and row.";
+            "\n9. Input n, display the border square asterisk with n column and row." +
+            "\n10. Input n, display the border squart asterisk with n column and row and its diagonal line.";
         private bool _isNested = true;
         private int _menuNumber;
 
@@ -71,6 +72,9 @@ namespace C_Sharp_Assignment.Sections
                     break;
                 case 9:
                     BorderSquareAsterisk();
+                    break;
+                case 10:
+                    DiagonalSquareAsterisk();
                     break;
             }
         }
@@ -268,9 +272,37 @@ namespace C_Sharp_Assignment.Sections
                 }
                 Console.WriteLine();
             }
-
             SubOptions(_menuNumber);
+        }
 
+        private void DiagonalSquareAsterisk()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("Input n, display the border square asterisk with n column and row and its diagonal line.");
+            Console.Write("Enter a number for n: ");
+            int userInput = NumberValidation(Console.ReadLine());
+
+            for (int row = 1; row <= userInput; row++)
+            {
+                for (int col = 1; col <= userInput; col++)
+                {
+                    if (row == 1 || row == userInput || col == 1 || col == userInput)
+                    {
+                        Console.Write("*");
+                        
+                    }
+                    else if (row == col || row == userInput-col+1)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+                Console.WriteLine();
+            }
+            SubOptions(_menuNumber);
         }
 
 
