@@ -40,6 +40,11 @@ namespace C_Sharp_Assignment.MainMenu
                     SwitchCase switchCase = new SwitchCase();
                     switchCase.MenuSelection();
                     break;
+                case 4:
+                    Console.Clear();
+                    Loops1 loops1 = new Loops1();
+                    loops1.MenuSelection();
+                    break;
                 default:
                     MenuSelection();
                     break;
