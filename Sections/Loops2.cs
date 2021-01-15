@@ -11,7 +11,9 @@ namespace C_Sharp_Assignment.Sections
         private int _maxMenu = 20;
         private int _minMenu = 11;
         private string _menuOptions = "11. Input n row and m column, display a rectangle." +
-            "\n12. Input n row and m column, display the border rectangle asterisk.";
+            "\n12. Input n row and m column, display the border rectangle asterisk." +
+            "\n13. Input n, display the right angle triangle asterisk" +
+            "\n14. Input n, display the left angle triangle asterisk";
         private bool _isNested = true;
         private int _menuNumber;
 
@@ -40,6 +42,12 @@ namespace C_Sharp_Assignment.Sections
                     break;
                 case 12:
                     BorderRectAsterisk();
+                    break;
+                case 13:
+                    RightAngleTriangleAsterisk();
+                    break;
+                case 14:
+                    LeftAngleTriangleAsterisk();
                     break;
             }
 
@@ -90,6 +98,58 @@ namespace C_Sharp_Assignment.Sections
                 }
                 Console.WriteLine();
             }
+            SubOptions(_menuNumber);
+        }
+
+        private void RightAngleTriangleAsterisk()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("13. Input n, display the right angle triangle asterisk");
+            Console.Write("Enter a number for n: ");
+            int userInput = NumberValidation(Console.ReadLine());
+
+            for(int row = 1; row <= userInput; row++)
+            {
+                for(int col = 1; col <= userInput; col++)
+                {
+                    if (col <= row)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+                Console.WriteLine();
+            }
+
+            SubOptions(_menuNumber);
+        }
+
+        private void LeftAngleTriangleAsterisk()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("14. Input n, display the left angle triangle asterisk");
+            Console.Write("Enter a number for n: ");
+            int userInput = NumberValidation(Console.ReadLine());
+
+            for (int row = 1; row <= userInput; row++)
+            {
+                for (int col = userInput; col != 0; col--)
+                {
+                    if (col >= row)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }                        
+                }
+                Console.WriteLine();
+            }
+
             SubOptions(_menuNumber);
         }
 
