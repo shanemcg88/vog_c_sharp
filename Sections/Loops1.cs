@@ -10,7 +10,7 @@ namespace C_Sharp_Assignment.Sections
     class Loops1 : MenuModel
     {
         private string _menuTitle = "Loops pt. 1";
-        private int _maxMenu = 15;
+        private int _maxMenu = 10;
         private int _minMenu = 0;
         private string _menuOptions = "1. Input n, n is natural number, display the list of number from 0 to n" +
             "\n2. Input n, display the multiplication table of n" +

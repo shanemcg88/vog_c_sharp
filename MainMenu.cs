@@ -8,8 +8,8 @@ namespace C_Sharp_Assignment.MainMenu
         private string _menuTitle = "Main Menu";
         private int _maxMenu = 7;
         private int _minMenu = 0;
-        private string _menuOptions = "1. Operators | 2. If Statements | 3. Switch Case | 4. Loop |" +
-                              "\n5. Array | 6. Function | 7. Class";
+        private string _menuOptions = "1. Operators | 2. If Statements | 3. Switch Case | 4. Loops (1-10) |" +
+                              "\n5. Loops (11-20) | 6. Function | 7. Class";
         private bool _isNested = false;
 
         public override string MenuTitle { get { return _menuTitle; } }
@@ -44,6 +44,11 @@ namespace C_Sharp_Assignment.MainMenu
                     Console.Clear();
                     Loops1 loops1 = new Loops1();
                     loops1.MenuSelection();
+                    break;
+                case 5:
+                    Console.Clear();
+                    Loops2 loops2 = new Loops2();
+                    loops2.MenuSelection();
                     break;
                 default:
                     MenuSelection();
