@@ -10,7 +10,8 @@ namespace C_Sharp_Assignment.Sections
         private string _menuTitle = "Loops pt. 2";
         private int _maxMenu = 20;
         private int _minMenu = 11;
-        private string _menuOptions = "11. Input n row and m column, display a rectangle.";
+        private string _menuOptions = "11. Input n row and m column, display a rectangle." +
+            "\n12. Input n row and m column, display the border rectangle asterisk.";
         private bool _isNested = true;
         private int _menuNumber;
 
@@ -37,6 +38,9 @@ namespace C_Sharp_Assignment.Sections
                 case 11:
                     RectangleAsterisk();
                     break;
+                case 12:
+                    BorderRectAsterisk();
+                    break;
             }
 
         }
@@ -62,6 +66,32 @@ namespace C_Sharp_Assignment.Sections
             SubOptions(_menuNumber);
         }
 
+        private void BorderRectAsterisk()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("11. Input n row and m column, display a rectangle.");
+            Console.Write("Enter a number for rows: ");
+            int rows = NumberValidation(Console.ReadLine());
+            Console.Write("Enter a number for columns: ");
+            int cols = NumberValidation(Console.ReadLine());
+
+            for (int i = 1; i <= rows; i++)
+            {
+                for (int x = 1; x <= cols; x++)
+                {
+                    if (i == 1 || i == rows || x == 1 || x == cols)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+                Console.WriteLine();
+            }
+            SubOptions(_menuNumber);
+        }
 
     }
 }
