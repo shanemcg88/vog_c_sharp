@@ -21,7 +21,7 @@ namespace C_Sharp_Assignment.Sections
             "\n7. Input n, n is natural number, display all n of divisors from 1 to n" +
             "\n8. Input n, display the squart asterisk with n column and row." +
             "\n9. Input n, display the border square asterisk with n column and row." +
-            "\n10. Input n, display the border squart asterisk with n column and row and its diagonal line.";
+            "\n10. Input n, display the border square asterisk with n column and row and its diagonal line.";
         private bool _isNested = true;
         private int _menuNumber;
 
