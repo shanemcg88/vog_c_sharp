@@ -8,12 +8,13 @@ namespace C_Sharp_Assignment.Sections
     class Arrays1 : MenuModel
     {
         private string _menuTitle = "Arrays pt. 1";
-        private int _maxMenu = 4;
+        private int _maxMenu = 5;
         private int _minMenu = 0;
         private string _menuOptions = "1. Input int into array, display all the elements in console" +
             "\n2. Input int into array, sort array, display all the elements in console" + 
             "\n3. Input int into array. Calculate sum of array" +
-            "\n4. Input Int array with n element, calculate the sum of even number in array";
+            "\n4. Input Int array with n element, calculate the sum of even number in array" +
+            "\n5. Input Int array with n element, find the max value";
         private bool _isNested = true;
         private int _menuNumber;
 
@@ -48,6 +49,9 @@ namespace C_Sharp_Assignment.Sections
                     break;
                 case 4:
                     SumOfEven();
+                    break;
+                case 5:
+                    MaxValueArray();
                     break;
             }
         }
@@ -151,6 +155,45 @@ namespace C_Sharp_Assignment.Sections
             Console.WriteLine();
             Console.WriteLine("Sum = " + sum);
 
+            SubOptions(_menuNumber);
+        }
+
+        private void MaxValueArray()
+        {
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("5. Input Int array with n element, find the max value");
+            Console.Write("Enter the first number: ");
+            int userNumber1 = NumberValidation(Console.ReadLine());
+            Console.Write("Enter the second number: ");
+            int userNumber2 = NumberValidation(Console.ReadLine());
+            Console.Write("Enter the third number: ");
+            int userNumber3 = NumberValidation(Console.ReadLine());
+
+            int[] arr = { userNumber1, userNumber2, userNumber3 };
+            int prevNumber = 0;
+            int maxNumber = 0;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (i == 0)
+                {
+                    maxNumber = arr[i];
+                    prevNumber = arr[i];
+                }
+                else if (arr[i] > prevNumber && arr[i] > maxNumber)
+                {
+                    maxNumber = arr[i];
+                    prevNumber = arr[i];
+                }
+                else if (arr[i] < prevNumber)
+                {
+                    prevNumber = arr[i];
+                }
+
+                Console.Write(arr[i] + " ");
+            }
+
+            Console.WriteLine("Max Number = " + maxNumber);
             SubOptions(_menuNumber);
         }
     }
